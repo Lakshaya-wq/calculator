@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Calculator</title>
+    </head>
+    <body class="text-center bg-dark">
+        <div class="container">
+            <div class="card bg-light">
+                <form name="form" autocomplete="off" spellcheck="false">
+                    <div class="card-header">
+                        <input
+                            readonly
+                            value="0"
+                            type="text"
+                            class="form-control form-control-lg main"
+                            name="res"
+                        />
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="9"
+                                            onclick="form.res.value += '9'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="8"
+                                            onclick="form.res.value += '8'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="7"
+                                            onclick="form.res.value += '7'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="+"
+                                            onclick="form.res.value += '+'"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="6"
+                                            onclick="form.res.value += '6'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="5"
+                                            onclick="form.res.value += '5'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="4"
+                                            onclick="form.res.value += '4'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="-"
+                                            onclick="form.res.value += '-'"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="3"
+                                            onclick="form.res.value += '3'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="2"
+                                            onclick="form.res.value += '2'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="1"
+                                            onclick="form.res.value += '1'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="&times;"
+                                            onclick="form.res.value += '*'"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="."
+                                            onclick="form.res.value += '.'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="0"
+                                            onclick="form.res.value += '0'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            value="/"
+                                            onclick="form.res.value += '/'"
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="button"
+                                            class="btn"
+                                            id="submit"
+                                            value="="
+                                            onclick="form.res.value = eval(form.res.value)"
+                                        />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- <script src="./main.js"></script> -->
+    </body>
+</html>
